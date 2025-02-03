@@ -1,0 +1,292 @@
+Aug 4, 2023  Advanced Next.js Developer Course: Build Scalable, SEO-Optimized Web Apps
+Develop Threads, Next.js 14 app that skyrocketed to 100 million sign-ups in less than 5 days, and dethroned giants like Twitter, ChatGPT, and TikTok to become the fastest-growing app ever!
+
+Ultimate Next 14 Course is now live: https://www.jsmastery.pro/next15
+Next.js 14 eBook: https://resource.jsmastery.pro/nextjs...
+
+Quick heads up: This tutorial covers Next.js 13, but don't let that number fool you. Next.js 14 is essentially a performance-focused update of version 13. That means every concept, technique, and feature we dive into here is just as applicable and relevant in Next.js 14
+
+⭐ Clerk - https://clerk.com/?utm_source=js_mast...
+
+💼 Land your dream job with expert mentor guidance or get your money back. To find out more, apply here: https://jsmastery.pro/masterclass
+
+If you’re experiencing Error: ClerkInstanceContext not found, apply the following Fix: Wrap your app with ClerkProvider in both /auth/layout.tsx and root/layout.tsx files.
+
+📚 Materials/References:
+GitHub Code (give it a star ⭐): https://github.com/adrianhajdin/threads
+Public folder (assets): https://drive.google.com/file/d/1lg7M...
+GitHub Gist Code: https://gist.github.com/adrianhajdin/...
+
+In this video, you'll:
+Master Next.js 14 with Server Side Rendering
+Learn MongoDB handling of complex schemas, multiple data population
+Create beautiful layouts with TailwindCSS
+Use Clerk for authentication
+Handle file uploads with UploadThing
+Explore Shadcn components
+Listen to real-time events with webhooks
+Understand middleware, API actions, and authorization
+Explore & integrate new Next.js layout route groups
+Validate data with Zod
+Manage forms with react hook form
+Create reusable components
+Build a solid application architecture
+Deploy the application and more!
+
+💻 Join our Discord Community -   / discord  
+🐦 Follow us on Twitter:   / jsmasterypro  
+🖼️ Follow us on Instagram:   / javascriptmastery  
+
+💼 Business Inquiries: contact@jsmastery.pro
+
+Time Stamps 👇
+00:00:00 Intro
+00:12:35 Auth
+00:27:31 HomePage
+01:03:35 Onboarding
+01:58:17 Back-end
+02:51:42 fetchPosts Homepage
+03:01:06 Thread Card Structure
+03:25:33 Reply/Comment
+03:45:40 Profile Page
+04:16:15 Search Page 
+04:33:55 Activity Page
+04:50:15 Community Page
+05:03:27 Expose API’s Route Deployment
+05:45:27 Task
+05:46:50 Final Deployment
+Chapters
+
+View all
+Explore this course
+
+14 lessons
+Advanced Next.js Developer Course: Build Scalable, SEO-Optimized Web Apps
+JavaScript Mastery
+Course progress
+1 of 14 lessons complete
+
+Transcript
+Follow along using the transcript.
+
+
+Show transcript
+
+JavaScript Mastery
+1.04M subscribers
+Videos
+About
+
+The Ultimate Next.js Ebook
+Last chance to get yours
+
+
+4:41:34
+Now playing
+Build and Deploy a Full Stack Next.js Application | React, Next JS, TypeScript, Tailwind CSS
+JavaScript Mastery
+400K views 1 year ago
+
+Shorts
+
+Muhammad Ali reference in Cars animation 🥊
+2.1M views
+
+
+A weapon that can kill Ainz Ooal Gown ☠️🥶 | #anime #animemoments
+1.4M views
+
+
+I built BEAUTIFUL api docs in one line of code.
+162K views
+
+
+The ACTUAL Best Fuel Source in Minecraft!
+4.2M views
+
+
+IIT JEE VS GATE ( A Story) #PW #Shorts
+101K views
+
+mojang is FINALLY balancing Minecraft
+7.9M views
+
+
+
+20:00
+Now playing
+Realistic Wars in Minecraft!
+Karl
+790K views 1 day ago
+New
+
+
+11:50
+Now playing
+The SHOCKING Truth About Who Should NOT Code! 🤫
+Aryan Mittal
+1K views 8 hours ago
+New
+
+
+3:54
+Now playing
+I Asked an Deepseek AI to Create My Portfolio Website – Here’s What Happened!
+M5 Tech Channel
+9 views 4 hours ago
+New
+
+
+4:58:48
+Now playing
+When A Simple Farmer WINS AGAINST A Demon Queen And She FALLS In LOVE | Manhwa Recap
+Mamoru Manhwa
+103K views 3 days ago
+New
+
+
+9:32
+Now playing
+I Designed Custom Minecraft Bosses...
+Daniel Krafft
+214K views 23 hours ago
+New
+
+
+11:20
+Now playing
+How to OVER Engineer a Website // What is a Tech Stack?
+Fireship
+2.6M views 3 years ago
+
+
+Now playing
+Code Flow: Watch Me Create, Debug, and Deploy : Trying out TREA, the new IDE
+Process Guy
+7 watching
+LIVE
+
+
+
+24:38
+Now playing
+MODI’s MASTERSTROKE Budget 2025 Analysed in Simple words: Budget 2025 case study
+Think School
+363K views 14 hours ago
+New
+
+
+19:31
+Now playing
+HAUNTED MANSION - Alex and Steve Legends (Minecraft Animation)
+Squared Media
+5.3M views 2 months ago
+
+
+11:59
+Now playing
+the ONLY way to run Deepseek...
+NetworkChuck
+525K views 2 days ago
+New
+
+
+5:04:44
+Now playing
+When the Game You're a Pro at Becomes Reality! - Manhwa Recap
+Manhwa Fresh
+315K views 1 month ago
+
+
+29:58
+Now playing
+Lover Records a Horrifying Secret on Phone before Murder! | Greeshma-Sharon Raj Case | Hindi
+Wronged
+2.2M views 2 days ago
+New
+
+
+3:30:37
+Now playing
+He Trained for 1,000 Years for the Apocalypse, & Now Even the Gods Fear Him! - Manhwa Recap
+Asura Recaps
+374K views 2 weeks ago
+
+
+43:17
+Now playing
+Can I Beat 100 Players For $10,000?
+ClownPierce
+1.6M views 2 months ago
+
+
+16:02
+Now playing
+Warden vs Elder Guardian and Drowned Ocean Army (Minecraft Animation Movie)
+Cubus Maximus
+3.4M views 11 months ago
+
+
+3:56
+Now playing
+Minecraft Just Banned Technoblade
+Cube Dimensions
+597K views 4 days ago
+New
+
+
+17:46
+Now playing
+10 MILLION BLOCK BASE in Minecraft Hardcore
+Saltyy
+830K views 5 months ago
+
+
+21:40
+Now playing
+Budget 2025 Explained in HINDI | Abhi and Niyu
+Abhi and Niyu
+1.3M views 1 day ago
+New
+
+
+21:19
+Now playing
+I Got The Worlds Best Minecraft Armor
+Carvs
+11M views 11 months ago
+
+
+Show more
+1,327 Comments
+Aditya Paul
+Add a comment...
+
+Pinned by JavaScript Mastery
+@javascriptmastery
+1 year ago (edited)
+Quick heads up: This tutorial covers Next.js 13, but don't let that number fool you. Next.js 14 is essentially a performance-focused update of version 13. That means every concept, technique, and feature we dive into here is just as applicable and relevant in Next.js 14
+
+🚨 Important Updates
+
+⌛ As of July 11, 2023, Next.js has been updated to version `14.0+.0+`. Even though the video may show an older version, rest assured that the entire application functions seamlessly with the latest Next.js version. You won't encounter any issues while following the video.
+
+⌛ Starting from October 26, 2023, Next.js server actions have stabilized. Therefore, there's no need to include them in the `next.config.js` file as an experimental feature flag.
+
+⚡ Error: ClerkInstanceContext not found
+
+Wrap your application in  `layout.tsx`(both in auth and root folders!)
+
+⚡ Cannot find module "tailwindcss-animate”
+
+Shadcn requires the `tailwindcss-animate` package to function properly. Do install shadcn first
+
+⚡ Syntax error: G:\threads\app\globals.css The max-sm: class does not exist. If max-sm: is a custom class, ensure it is defined within a @layer directive. (122:3)
+
+The correct format should be `max-sm:hidden` without any space in between. Please ensure that your code formatter is functioning correctly, as it may sometimes introduce such spaces unintentionally.
+
+⚡ Clerk 401 Unauthorized error
+
+Ensure you have rightly configured the `middleware.ts/js` file and are using your own envs.
+
+If you encounter any other issues or have questions, please ask in the comments. We're here to help!
