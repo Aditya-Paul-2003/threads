@@ -1,4 +1,11 @@
 https://youtu.be/O5cmLDVTgAs?si=it4NNOkaqQT6MOcr
 
 
-First i cloned the repository 
+->  First i cloned the repository threads to the desired directory  [npx create-next-app@latest ./]
+->  Then i installed typescript, tailwind css, and app router(for nextJs13 features) all of the required dependencies are installed, including:
+    React, Next, Typescript, additional types and also Tailwind Css
+->  once our default packages being installed we are heading towards installing additional ones required  
+->  [npm install @clerk/nextjs]  we are installing "Clerk" which will allow us to implement super simple but super robust authentication to our application. It does everything from Social Sign-in and email and password log-in, to managing your account once you are in.
+->  [npm install @clerk/nextjs @uploadthing/react] we willl use to upload profile images, the we will install mongoose, also install package called svix we will use for Web Hooks =========> [npm install  @clerk/nextjs @uploadthing/react mongoose svix/uploadthing]  
+->  dont forget to run [npm run dev] to check evrything is live on the website
+
