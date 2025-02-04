@@ -123,20 +123,25 @@ clerkMiddleware() grants you access to user authentication state throughout your
         middleware.ts
         _____________
 
-        import { clerkMiddleware } from '@clerk/nextjs/server'
+        import { clerkMiddleware, createRouteMatcher } from '@clerk/nextjs/server';
 
-        export default clerkMiddleware()
+        //special care for sign-in and sign-ip both needs to be mentioned 
+        
+        const isPublicRoute = createRouteMatcher(['/sign-in(.*)', '/sign-up(.*)']); 
+
+
+        export default clerkMiddleware(async (auth, request) => {
+          if (!isPublicRoute(request)) {
+            await auth.protect();
+          }
+        });
 
         export const config = {
-        matcher: [
-            
-            // Skip Next.js internals and all static files, unless found in search params
+          matcher: [
             '/((?!_next|[^?]*\\.(?:html?|css|js(?!on)|jpe?g|webp|png|gif|svg|ttf|woff2?|ico|csv|docx?|xlsx?|zip|webmanifest)).*)',
-            
-            // Always run for API routes
             '/(api|trpc)(.*)',
-        ],
-        }
+          ],
+        };
 
         
 By default, clerkMiddleware() will not protect any routes. All routes are public and you must opt-in to protection for routes. See the clerkMiddleware() reference to learn how to require authentication for specific routes.
@@ -196,4 +201,65 @@ terminal
 
 npm run dev
 Visit your app's homepage at http://localhost:3000. Sign up to create your first user.
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+
+https://clerk.com/docs/references/nextjs/custom-sign-in-or-up-page
+
+
+
+
+
+
+
 =========================================================================================================================================================================================================================================================== 
+
+
+
+now i have encountered multiple errors regarding authentication pages:
+so mentioned above <'middleware.ts'> 
+|-----> is working fine after some changes and updated one is mentioned above,
+next is the <'.env.local'>
+|-----> exctract first line from the Clerk guideed Docs 
+        //////////////////////////////////////////
+      1       NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=pk_test_YW11c2VkLXlhay02NC5jbGVyay5hY2NvdW50cy5kZXYk
+      2       CLERK_SECRET_KEY=sk_test_llnlkrXS5GqOq9ehTu0Bi9ji3U7SJZpLGYTTSmK24o
+                                                          ///////////////////////////////////////////////////
+      3       NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in                            
+      4       NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+      5       NEXT_PUBLIC_CLERK_SIGN_IN_FALLBACK_REDIRECT_URL=/dashboard
+      6       NEXT_PUBLIC_CLERK_SIGN_UP_FORCE_REDIRECT_URL=/
+
+
+also make sure of:
+|-->multple ClerkProvider declaration
+|-->ClerkProvider is wrapping the comonents properly
+|-->'layout.tsx' file must only and only come directly under (auth) and (root) folder, sub folders such as <sign-in,   
+    sign-up and onboarding doesn't require such file>  
+
+ 
+
+ ------------------------------------------------------------------------------------------------------------------------------------------
+
+
+ ->go through TailwindCSS documentations <https://v2.tailwindcss.com/docs>, quick search <for easy inding of component along with resp. code >, and go through cheatsheets<https://nerdcave.com/tailwind-cheat-sheet>
+
+
+ ------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+  <div className="flex item-center gap-1">
+    <div className="block md:hidden">
+      <SignedIn>
+          <SignOutButton>
+          
+          </SignOutButton>
+      </SignedIn>
+    </div>
+  </div>
+ 
+
+
+ ------------------------------------------------------------------------------------------------------------------------------------------
