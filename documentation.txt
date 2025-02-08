@@ -263,3 +263,7 @@ also make sure of:
 
 
  ------------------------------------------------------------------------------------------------------------------------------------------
+
+ https://clerk.com/docs/upgrade-guides/core-2/remix#other-breaking-changes
+
+ clerk documentation solution to everything
