@@ -1,11 +1,21 @@
-import { OrganizationSwitcher, SignedIn, SignOutButton } from "@clerk/nextjs";
+import { OrganizationSwitcher, SignedIn, SignOutButton, useSignIn } from "@clerk/nextjs";
 import Image from "next/image";
 import Link from "next/link";
-import {dark} from '@clerk/themes';
+import { useRouter } from "next/router";
 
 function Topbar() {
-    const isUserLoggedIn= true;
-    return(
+    const router = useRouter();
+    const { signIn } = useSignIn();
+
+    const handleSignIn = async () => {
+        // Assuming signIn is a function that handles the sign-in process
+        const result = await signIn();
+        if (result) {
+            router.push('/auth/onboarding'); // Redirect to onboarding page
+        }
+    };
+
+    return (
         <nav className="topbar">
             <Link href="/" className="flex items-center gap-4">
                 <Image src="/assets/logo.svg" alt="log" width={28} height={28} />
@@ -16,11 +26,7 @@ function Topbar() {
                     <SignedIn>
                         <SignOutButton>
                             <div className="flex cursor-pointer">
-                                <Image src="/assets/logout.svg"
-                                    alt="logout" 
-                                    width={24} 
-                                    height={24}
-                                />
+                                <Image src="/assets/logout.svg" alt="logout" width={24} height={24} />
                             </div>
                         </SignOutButton>
                     </SignedIn>
@@ -28,16 +34,14 @@ function Topbar() {
 
                 <OrganizationSwitcher
                     appearance={{
-                        baseTheme: dark,
-                        elements:{
-                            organizationSwitcherTrigger:
-                            "py-2 px-4"
+                        elements: {
+                            organizationSwitcherTrigger: "py-2 px-4"
                         }
                     }}
                 />
             </div>
-            
         </nav>
     )
 }
+
 export default Topbar;
