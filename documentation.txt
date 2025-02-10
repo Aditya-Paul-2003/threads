@@ -10,7 +10,7 @@ https://youtu.be/O5cmLDVTgAs?si=it4NNOkaqQT6MOcr
 ->  dont forget to run [npm run dev] to check evrything is live on the website
 
 
-->  #'tailwind.confi.ts' and 'global.css' file 
+->  #'tailwind.config.ts' and 'global.css' file 
 ===========================================================================================================================================================================================================================================================
 
 
@@ -330,3 +330,60 @@ You have full control over the markup and styling.
  onChange={(e) => handleImage(e,field.onChange)}
  
  e is event 
+
+
+ 
+=>      Error: Invalid src prop
+        (https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yc2loNzBUWmw2NWtlTGV0OW1DekJMalY0U0gifQ) 
+        on `next/image`, hostname "img.clerk.com" is not configured under images in your `next.config.js`
+        See more info: https://nextjs.org/docs/messages/next-image-unconfigured-host
+
+        this error is not due to our fault its just trying to convey the message that [nextjs is protecting us by warning us] 
+        In this case we are trying to render an image thats comming from clerk. and clerk immediately configured it once we logged in using Google, so it picked out the user prifile now we have to allow the hostname imagecler.com to allow to post images on our nextjs app and you do that within the next.config.js
+        {heres a thiing after installing next-js we were provided with next.config.ts after installation} 
+
+
+const [files, setFiles] = useState<File[]>([])  
+* import useState from react
+* general synatx :> const [state, setState] = useState(initialState)
+* type of setState is 'File[]' - its is a file specifically an array of files
+* further knowledge read [https://react.dev/reference/react/useState]
+
+
+1:38:30
+
+=>if(!file.type.includes('image')) return; line 60 {AccountProfile.tsx}
+
+
+=> this function lets us know whether the user has changed the image. image can also be there at the start when we first load the account with Google. so if there is a case where user has changed the image or not then only possibility is that user has upoladed a new image.
+
+so to identify or observe the change we will write this syntax to check possibility: 
+if(hasImageChanged){
+  const imgRes=
+}
+1:47:02
+// created by chatgpt
+export function isBase64Image(imageData: string) {
+  const base64Regex = /^data:image\/(png|jpe?g|gif|webp);base64,/;
+  return base64Regex.test(imageData);
+}//prompt write a js function block of code that checks whether an image is base64
+
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+
+https://docs.uploadthing.com/api-reference/react#generate-react-helpers
+
+generateReactHelpers
+The generateReactHelpers function is used to generate the useUploadThing hook and the uploadFiles functions you use to interact with UploadThing in custom components. It takes your File Router as a generic
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+Next.js App Router Setup:
+
+{https://docs.uploadthing.com/getting-started/appdir}
+
+Set Up A FileRouter:
+1. Creating your first FileRoute
+2. Create a Next.js API route using the FileRouter
+3. Create The UploadThing Components
