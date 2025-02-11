@@ -85,10 +85,10 @@ const AccountProfile = ({user, btnTitle}:Props) => {
 
               if(imgRes && imgRes[0].url){
                 values.profile_photo = imgRes[0].url;
-
               }
             }
-            
+         
+            //TODO: Update user profile
         }
 
         return (
